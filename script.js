@@ -405,13 +405,13 @@ async function registrarCita(e) {
         }
 
 
-        const telefonoBarberia = "5519997672157";
+        const telefonoBarberia = "5519995149370";
 
         const fechaAmigable =
             formatearFechaAmigable(fecha);
 
         const textoMensaje = `
- SUPREME BARBERSHOP!
+BARBERSHOP SUPREME!
 
 Gostaria de confirmar meu agendamento:
 
