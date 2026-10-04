@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Supreme Barbershop</title>
+    <title> Barbershop Supreme</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
@@ -63,32 +63,60 @@
         }
 
          header h1 {
-            font-size: clamp(2rem, 4vw, 3rem);
-            font-weight: 700;
-            letter-spacing: 2px;
+    font-size: clamp(2.2rem, 4.5vw, 3.4rem);
 
-  background: linear-gradient(
-                135deg,
-                #c01613 0%,
-                #a41010 25%,
-                #24060b 50%,
-                #ca2626 75%,
-                #631408 100%
-            );
+    font-weight: 700;
 
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+    letter-spacing: 3px;
 
-            background-size: 200% auto;
-            animation: brilhoMetalico 5s linear infinite;
+    line-height: 1.1;
 
-            text-shadow:
-                0 4px 10px rgba(74, 24, 24, 0.644),
-                0 0 25px rgba(15, 38, 212, 0.502);
+    color: #d71920;
+
+    background:
+        linear-gradient(
+            180deg,
+            #ffffff 0%,
+            #311010 8%,
+            #d71920 30%,
+            #8d080d 55%,
+            #e3262e 75%,
+            #2c0808 100%
+        );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    background-clip: text;
+
+    background-size: 100% 250%;
+
+    animation: supremeMetal 6s ease-in-out infinite;
+
+    -webkit-text-stroke: 0.6px rgba(255, 255, 255, 0.589);
+
+    filter: drop-shadow(0 4px 5px rgba(0,0,0,0.8))
+            drop-shadow(0 0 12px rgba(180,0,0,0.25));
+}
+
+
+@keyframes supremeMetal {
+
+    0% {
+        background-position: 50% 0%;
+    }
+
+    50% {
+        background-position: 50% 100%;
+    }
+
+    100% {
+        background-position: 50% 0%;
+    }
+}
 
           
-        }
+
 
         @keyframes brilhoMetalico {
             0% {
@@ -109,8 +137,9 @@
         header p {
             margin-top: 10px;
             font-size: 1rem;
-            color: #c2bcbcfb;
-            font-weight: 300;
+            color: #e0dfdffb;
+            font-weight: 500;
+            letter-spacing: 1px;
         }
 
         
@@ -191,12 +220,10 @@
 
             font-size: 1.07rem;
             font-weight: 300;
-
             line-height: 1.9;
-
-            color: rgb(238, 229, 229);
-
+            color: rgb(238, 232, 232);
             margin-bottom: 30px;
+            letter-spacing: 1px;
         }
 
         
@@ -207,11 +234,11 @@
 
             background: linear-gradient(
                 135deg,
-                #0e44e6fb,
-                #305fc4
+                #a71510ab,
+                #881717d2
             );
 
-            color: #181717;
+            color: #faf8f8bb;
 
             padding: 16px 38px;
 
@@ -227,7 +254,7 @@
             transform: translateY(-4px);
 
             box-shadow:
-                0 7px 30px rgba(202, 8, 95, 0.795);
+                0 1px 4px rgba(208, 208, 238, 0.795);
         }
 
         
@@ -253,20 +280,20 @@
 .footer-location {
   font-size: 1rem;
   margin: 0;
-  color: #cccccc; 
+  color: #db0d0d; 
 }
 
 
 .footer-location a {
-  color: #646de7ee; 
+  color: #dfd9d9d5; 
   text-decoration: none; 
   font-weight: bold;
-  transition: color 0.3s ease; 
+  transition: color .3s ease; 
 }
 
 
 .footer-location a:hover {
-  color: #ffffff; 
+  color: #347edfc2; 
   text-decoration: underline; 
 }
 
@@ -331,7 +358,7 @@
    
 
     <header>
-        <h1>Supreme Barbershop</h1>
+        <h1>Barbershop Supreme </h1>
         <p>Agende seu horário em poucos cliques</p>
     </header>
 
