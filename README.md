@@ -106,4 +106,4 @@ O projeto continuará sendo atualizado conforme novos conhecimentos e melhorias 
 
 Desenvolvedor Web Júnior
 
-🔗 [GitHub — @jtovarmorales93](https://github.com/jtovarmorales93)
+🔗 [GitHub — @josetovar93](https://github.com/josetovar93)
