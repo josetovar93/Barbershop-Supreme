@@ -1,102 +1,109 @@
-# 💈Barbershop Supreme - Agendamento Online
+# 💈 Barbershop Supreme — Sistema de Agendamento Online
 
-Uma solução simples, rápida e intuitiva para clientes agendarem cortes de cabelo e barbeiros gerenciarem sua agenda diária sem perda de tempo.
+O **Barbershop Supreme** é um sistema web de agendamento online desenvolvido para facilitar o processo de marcação de horários em uma barbearia.
 
-O projeto elimina a necessidade de conversas demoradas por WhatsApp para consultar horários disponíveis. O cliente acessa, escolhe o serviço, visualiza a foto do barbeiro e agenda em segundos.
+A ideia do projeto é permitir que o cliente escolha o **serviço, barbeiro, data e horário** de forma simples, sem precisar entrar em contato diretamente para consultar a disponibilidade.
 
-![Demo do Supreme Barbershop](https://via.placeholder.com/800x400?text=Screenshot+do+projeto)
+O projeto também possui um **painel administrativo**, onde os agendamentos realizados podem ser visualizados e acompanhados.
 
-> 🔗 **Demo ao vivo:** [adicione aqui o link do Firebase Hosting]
+🔗 **Demo ao vivo:** [Acesse o Barbershop Supreme](https://josetovar93.github.io/Barbershop-Supreme/)
+
+---
+
+## 📸 Preview
+
+![Barbershop Supreme](./assets/preview.png)
 
 ---
 
 ## 🚀 Funcionalidades
 
-### 📱 Para o Cliente
-- **Interface Intuitiva:** processo de agendamento simples e direto.
-- **Escolha de Profissional:** visualização do nome e foto do barbeiro de preferência.
-- **Verificação de Disponibilidade:** exibição apenas dos dias e horários livres.
-- **Identificação Rápida:** cadastro simplificado com apenas nome e celular.
+### 📱 Para o cliente
 
-### 💼 Para o Barbeiro (Painel Administrativo)
-- **Autenticação Segura:** login exclusivo para os profissionais da barbearia.
-- **Agenda do Dia:** visualização clara do nome do cliente, celular, serviço, data e hora.
-- **Notificação Instantânea:** assim que o cliente clica em agendar, o barbeiro recebe uma mensagem de confirmação no seu WhatsApp.
+* Escolha do serviço.
+* Escolha do barbeiro.
+* Visualização dos profissionais.
+* Seleção de data e horário.
+* Verificação dos horários disponíveis.
+* Cadastro com nome e telefone.
+* Realização do agendamento.
 
----
+### 💼 Painel administrativo
 
-## 🛠️ Tecnologias Utilizadas
-
-| Camada | Tecnologia | Função |
-|---|---|---|
-| Frontend | HTML5, CSS3, JavaScript (Vanilla) | Interface do usuário |
-| Backend (BaaS) | Firebase Firestore | Armazenamento de agendamentos e horários em tempo real |
-| Backend (BaaS) | Firebase Authentication | Controle de acesso seguro para o painel do administrador |
-| Integração | WhatsApp Deep Linking | Notificação gratuita ao barbeiro via link direto |
+* Login para acesso ao painel.
+* Visualização dos agendamentos.
+* Visualização do nome e telefone do cliente.
+* Visualização do serviço escolhido.
+* Visualização do barbeiro.
+* Visualização da data e horário do agendamento.
 
 ---
 
-## 📋 Pré-requisitos
+## 🛠️ Tecnologias utilizadas
 
-- Um navegador web atualizado (Chrome, Edge, Firefox, etc.).
-- Uma conta no [Firebase](https://console.firebase.google.com/) para configurar o banco de dados.
+* **HTML5**
+* **CSS3**
+* **JavaScript**
+* **Firebase Authentication**
+* **Firebase Firestore**
+* **WhatsApp**
+* **Git e GitHub**
 
 ---
 
-## 🔧 Instalação e Configuração
+## 🔥 Firebase
 
-**1. Clone o repositório:**
+O projeto utiliza o **Firebase** para armazenar e gerenciar os agendamentos realizados pelos clientes.
+
+Também foi utilizado o **Firebase Authentication** para controlar o acesso ao painel administrativo.
+
+---
+
+## 💻 Como executar
+
+Clone o projeto:
 
 ```bash
-git clone https://github.com/jtovarmorales93/Supreme-Barbershop.git
+git clone https://github.com/josetovar93/Barbershop-Supreme.git
 ```
 
-**2. Configure o Firebase:**
+Entre na pasta:
 
-- Crie um projeto no [console do Firebase](https://console.firebase.google.com/).
-- Ative o **Firestore Database** e o **Authentication**.
-- Adicione as chaves de configuração do seu projeto no arquivo JavaScript correspondente (ex: `firebase-config.js`):
-
-```javascript
-const firebaseConfig = {
-  apiKey: "SUA_API_KEY",
-  authDomain: "SEU_PROJETO.firebaseapp.com",
-  projectId: "SEU_PROJETO_ID",
-  storageBucket: "SEU_PROJETO.firebasestorage.app",
-  messagingSenderId: "SEU_SENDER_ID",
-  appId: "SEU_APP_ID"
-};
+```bash
+cd Barbershop-Supreme
 ```
 
-> ⚠️ **Importante:** nunca suba credenciais reais em repositórios públicos. Adicione o arquivo de configuração ao `.gitignore` e configure as **Firestore Security Rules** para permitir escrita apenas a usuários autenticados como administradores.
-
-**3. Execução:**
-
-Abra o arquivo `index.html` diretamente no navegador ou utilize uma extensão como o **Live Server** no VS Code.
+Depois, abra o projeto no **VS Code** e execute utilizando o **Live Server**.
 
 ---
 
-## 🔒 Segurança
+## 🔄 Próximas melhorias
 
-Este projeto depende das **Firestore Security Rules** para proteger os dados dos clientes. Certifique-se de restringir a escrita/leitura da coleção de agendamentos apenas a usuários autenticados com permissão de administrador antes de publicar em produção.
+Este projeto continua em desenvolvimento e novas melhorias serão realizadas futuramente.
 
----
+Alguns dos próximos objetivos são:
 
-## 🗺️ Roadmap / Próximos Passos
-
-- [ ] Deploy via Firebase Hosting
-- [ ] Testes automatizados
-- [ ] Versão mobile-first refinada
-
----
-
-## 📄 Licença
-
-Este projeto está sob a licença MIT — veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+* Melhorar a experiência do cliente durante o processo de agendamento.
+* Melhorar a organização e visualização dos horários disponíveis.
+* Melhorar a experiência de utilização do painel administrativo.
+* Adicionar novas funcionalidades para facilitar o gerenciamento dos agendamentos.
 
 ---
 
-## ✒️ Autor
+## 📚 Sobre o projeto
 
-**José Tovar** - Desenvolvedor Júnior
-[GitHub: @jtovarmorales93](https://github.com/jtovarmorales93)
+Este projeto foi desenvolvido como parte da minha evolução no **desenvolvimento web**, colocando em prática conhecimentos de HTML, CSS, JavaScript e Firebase.
+
+Mais do que apenas criar uma página, a proposta foi desenvolver uma aplicação que pudesse resolver uma necessidade real: **facilitar o agendamento de serviços em uma barbearia.**
+
+O projeto continuará sendo atualizado conforme novos conhecimentos e melhorias forem sendo aplicados.
+
+---
+
+## 👨‍💻 Autor
+
+**José Tovar**
+
+Desenvolvedor Web Júnior
+
+🔗 [GitHub — @jtovarmorales93](https://github.com/jtovarmorales93)
