@@ -14,7 +14,7 @@ O projeto também possui um **painel administrativo**, onde os agendamentos real
 
 <p align="center">
   <img src="./assets/preview.png" width="40%">
-  <img src="./assets/preview2.png" width="40%">
+  <img src="./assets/preview2.png" width="45%">
 </p>
 ---
 
