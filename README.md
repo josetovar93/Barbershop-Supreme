@@ -1,4 +1,4 @@
-# 💈 Barbershop Supreme — Sistema de Agendamento Online
+# 💈 Barbershop Supreme — Agendamento Online
 
 O **Barbershop Supreme** é um sistema web de agendamento online desenvolvido para facilitar o processo de marcação de horários em uma barbearia.
 
