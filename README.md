@@ -13,8 +13,8 @@ O projeto também possui um **painel administrativo**, onde os agendamentos real
 ## 📸 Preview
 
 <p align="center">
-  <img src="./assets/preview.png" width="45%">
-  <img src="./assets/preview2.png" width="45%">
+  <img src="./assets/preview.png" width="45%" height="300px" style="object-fit: cover;">
+  <img src="./assets/preview2.png" width="45%" height="300px" style="object-fit: cover;">
 </p>
 ---
 
