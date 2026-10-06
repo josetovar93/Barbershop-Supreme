@@ -1,4 +1,4 @@
-# 💈 Supreme Barbershop - Sistema de Agendamento Online
+# 💈Barbershop Supreme - Agendamento Online
 
 Uma solução simples, rápida e intuitiva para clientes agendarem cortes de cabelo e barbeiros gerenciarem sua agenda diária sem perda de tempo.
 
