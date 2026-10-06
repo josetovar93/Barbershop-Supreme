@@ -12,8 +12,10 @@ O projeto também possui um **painel administrativo**, onde os agendamentos real
 
 ## 📸 Preview
 
-![Barbershop Supreme](./assets/preview.png)
-
+<p align="center">
+  <img src="./assets/preview.png" width="40%">
+  <img src="./assets/preview2.png" width="40%">
+</p>
 ---
 
 ## 🚀 Funcionalidades
