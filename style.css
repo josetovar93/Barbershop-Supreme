@@ -527,3 +527,205 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     color: #81b9e7;
     border-bottom-color: currentColor;
 }
+
+
+/* =====================================================================
+   DESKTOP / NOTEBOOK  (>= 1024px)
+   Bloco único e isolado: o mobile (< 1024px) NÃO é afetado.
+   Tudo aqui apenas sobrescreve valores do CSS acima.
+   ===================================================================== */
+@media (min-width: 1024px) {
+
+    /* Variável: altura do header compacto (usada no header e no body) */
+    :root {
+        --header-h: 96px;
+    }
+
+    /* Corpo: reserva o espaço do header fixo e centraliza o conteúdo */
+    body {
+        padding: calc(var(--header-h) + 24px) 24px 24px;
+    }
+
+    /* Header compacto */
+    .header {
+        height: var(--header-h);
+        min-height: 0;
+        padding: 10px 24px;
+        gap: 2px;
+    }
+
+    .titulo {
+        font-size: 2.2rem;
+        letter-spacing: 4px;
+        margin: 0;
+        padding: 0;
+        line-height: 1.1;
+    }
+
+    .bienvenida {
+        font-size: 0.9rem;
+        margin-top: 0;
+    }
+
+    /* Container: largura máxima controlada, sem margens gigantes */
+    .container {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    /* Cartão do formulário */
+    .agendamiento {
+        max-width: 100%;
+        padding: 28px 32px 30px;
+        border-radius: 14px;
+    }
+
+    .agendamiento h2 {
+        font-size: 1.15rem;
+        letter-spacing: 2px;
+        margin-bottom: 26px;
+    }
+
+    .agendamiento h2::after {
+        bottom: -8px;
+        width: 60%;
+        height: 2px;
+    }
+
+    /* Formulário em 2 colunas:
+       Nome | Telefone  /  Serviço | Barbeiro  /  Data | Horário  /  Botão */
+    #formulario {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 20px;
+        row-gap: 2px;
+        align-items: start;
+    }
+
+    #formulario .boton {
+        grid-column: 1 / -1;
+    }
+
+    /* Campos mais compactos */
+    .campo {
+        margin-bottom: 12px;
+    }
+
+    .campo label {
+        font-size: 0.72rem;
+        margin-bottom: 6px;
+        letter-spacing: 1.2px;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="date"],
+    select {
+        padding: 11px 14px;
+        font-size: 0.92rem;
+        border-radius: 8px;
+    }
+
+    input[type="date"] {
+        min-height: 0;
+    }
+
+    /* Botão principal */
+    .boton {
+        padding: 13px;
+        font-size: 0.92rem;
+        letter-spacing: 1.5px;
+        margin-top: 6px;
+    }
+
+    /* Foto do barbeiro: menor e sem margem quando oculta */
+    #contenedor-foto-barbero {
+        margin: 0;
+    }
+
+    #contenedor-foto-barbero.mostrar-foto {
+        height: 76px;
+        margin: 10px 0 2px;
+    }
+
+    #foto-barbero {
+        width: 76px;
+        height: 76px;
+    }
+
+    /* Notificação (popup) mais discreta */
+    #notificacion {
+        width: 380px;
+        padding: 20px 26px;
+    }
+
+    #notificacion-mensaje {
+        font-size: 15px;
+    }
+
+    .icono-exito {
+        width: 48px;
+        height: 48px;
+        font-size: 24px;
+    }
+
+    /* Rodapé alinhado à largura do formulário */
+    .footer {
+        width: 100%;
+        max-width: 720px;
+        margin-top: 8px;
+        padding: 14px;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+
+    .footer .programador {
+        font-size: 0.75rem;
+    }
+}
+
+/* Notebooks com pouca altura (ex.: 1366x768): compacta o vertical */
+@media (min-width: 1024px) and (max-height: 760px) {
+    :root {
+        --header-h: 84px;
+    }
+
+    .titulo {
+        font-size: 1.9rem;
+    }
+
+    .agendamiento {
+        padding: 22px 28px 24px;
+    }
+
+    .agendamiento h2 {
+        margin-bottom: 22px;
+    }
+
+    .campo {
+        margin-bottom: 8px;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="date"],
+    select {
+        padding: 9px 12px;
+    }
+}
+
+/* Full HD e monitores grandes (>= 1920px): pequeno respiro extra,
+   mas o formulário continua com largura controlada */
+@media (min-width: 1920px) {
+    .container,
+    .footer {
+        max-width: 760px;
+    }
+
+    .titulo {
+        font-size: 2.5rem;
+    }
+}
