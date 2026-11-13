@@ -510,11 +510,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     margin-top: 6px;
     font-size: 0.8rem;
     letter-spacing: 0.05em;
-    color: #8a8a8a;
+    color: #c0bdbd;
 }
 
 .footer .programador a {
-    color: #0d84e6;
+    color: #0ca4e0;
    
     font-weight: 600;
     text-decoration: none;
@@ -524,7 +524,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .footer .programador a:hover,
 .footer .programador a:focus-visible {
-    color: #81b9e7;
+    color: #8db8db;
     border-bottom-color: currentColor;
 }
 
