@@ -33,6 +33,7 @@ btnLogin.addEventListener('click', async () => {
   try {
 
     await signInWithEmailAndPassword(auth, email, senha);
+    
 
     alert("Login correcto ✔");
 
