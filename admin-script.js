@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
             registradas = registradas.filter(cita => cita.fecha === filtroFechaActual);
         }
 
-        // Ordenamiento Cronológico por Horario de Entrada
+        // Ordenamiento Cronológico por Horario de entrada
         registradas.sort((a, b) => {
             const horaA = a.inicio || "00:00";
             const horaB = b.inicio || "00:00";
